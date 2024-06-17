@@ -1,0 +1,426 @@
+ \documentclass[11pt]{report}
+
+\usepackage[T2A]{fontenc}
+
+\usepackage[utf8]{inputenc}
+
+\usepackage[russian]{babel}
+
+\usepackage{amsmath,amssymb}
+
+\begin{document}
+
+\pagestyle{empty}
+
+{\bf Индивидуальное задание.}
+
+
+Найти собственные числа и собственные векторы линейного оператора.
+Построить матрицу оператора в заданном базисе ($e_1$, $e_2$, $e_3$).
+Построить матрицу оператора в базисе из собственных векторов.
+
+Вывести на экран матрицу оператора А, матрицу перехода к базису ($e_1$, $e_2$, $e_3$),
+матрицу оператора в базисе ($e_1$, $e_2$, $e_3$), матрицу перехода к базису из собственных векторов,
+матрицу оператора в базисе из собственных векторов.
+
+Вариант N 1
+
+$$A = \left[\begin{matrix}124 & -79 & 118\\174 & -129 & 102\\8 & -8 & -22\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-1\\4\\4\end{matrix}\right],\quad e_2 = \left[\begin{matrix}1\\-2\\-4\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-4\\4\\-2\end{matrix}\right]$$Вариант N 2
+
+$$A = \left[\begin{matrix}-126 & -36 & 66\\3 & -54 & 3\\-28 & -8 & -28\end{matrix}\right],\quad e_1 = \left[\begin{matrix}1\\1\\3\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-2\\2\\2\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-3\\-2\\-3\end{matrix}\right]$$Вариант N 3
+
+$$A = \left[\begin{matrix}130 & 288 & 228\\-102 & -230 & -186\\58 & 132 & 108\end{matrix}\right],\quad e_1 = \left[\begin{matrix}1\\-3\\-2\end{matrix}\right],\quad e_2 = \left[\begin{matrix}3\\-2\\-3\end{matrix}\right],\quad e_3 = \left[\begin{matrix}3\\3\\-1\end{matrix}\right]$$Вариант N 4
+
+$$A = \left[\begin{matrix}35 & 56 & 40\\20 & 75 & 40\\-40 & -108 & -65\end{matrix}\right],\quad e_1 = \left[\begin{matrix}2\\3\\1\end{matrix}\right],\quad e_2 = \left[\begin{matrix}4\\-1\\4\end{matrix}\right],\quad e_3 = \left[\begin{matrix}4\\1\\2\end{matrix}\right]$$Вариант N 5
+
+$$A = \left[\begin{matrix}20 & -18 & 12\\114 & -88 & 54\\147 & -108 & 65\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-2\\3\\4\end{matrix}\right],\quad e_2 = \left[\begin{matrix}3\\-2\\-3\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-2\\1\\2\end{matrix}\right]$$Вариант N 6
+
+$$A = \left[\begin{matrix}177 & 429 & -111\\-37 & -109 & 21\\106 & 222 & -88\end{matrix}\right],\quad e_1 = \left[\begin{matrix}1\\1\\-2\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-3\\3\\-4\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-3\\-1\\1\end{matrix}\right]$$Вариант N 7
+
+$$A = \left[\begin{matrix}-86 & 44 & 40\\-216 & 110 & 96\\64 & -32 & -26\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-1\\-4\\2\end{matrix}\right],\quad e_2 = \left[\begin{matrix}1\\2\\-1\end{matrix}\right],\quad e_3 = \left[\begin{matrix}2\\1\\-1\end{matrix}\right]$$Вариант N 8
+
+$$A = \left[\begin{matrix}71 & 452 & -381\\9 & 78 & -57\\26 & 176 & -144\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-1\\-1\\1\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-1\\-3\\-4\end{matrix}\right],\quad e_3 = \left[\begin{matrix}3\\4\\-1\end{matrix}\right]$$Вариант N 9
+
+$$A = \left[\begin{matrix}-66 & 72 & 72\\16 & 2 & -16\\-52 & 40 & 58\end{matrix}\right],\quad e_1 = \left[\begin{matrix}1\\-2\\-1\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-2\\-4\\1\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-2\\2\\1\end{matrix}\right]$$Вариант N 10
+
+$$A = \left[\begin{matrix}-95 & -150 & -150\\-29 & -118 & -78\\54 & 148 & 108\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-1\\4\\1\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-3\\-2\\2\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-3\\3\\2\end{matrix}\right]$$Вариант N 11
+
+$$A = \left[\begin{matrix}5 & 24 & -24\\-8 & -53 & 56\\-5 & -40 & 43\end{matrix}\right],\quad e_1 = \left[\begin{matrix}2\\-1\\1\end{matrix}\right],\quad e_2 = \left[\begin{matrix}4\\1\\4\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-4\\-2\\-4\end{matrix}\right]$$Вариант N 12
+
+$$A = \left[\begin{matrix}27 & -49 & 51\\108 & -120 & 108\\123 & -113 & 99\end{matrix}\right],\quad e_1 = \left[\begin{matrix}2\\3\\1\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-3\\2\\-1\end{matrix}\right],\quad e_3 = \left[\begin{matrix}2\\-3\\1\end{matrix}\right]$$Вариант N 13
+
+$$A = \left[\begin{matrix}-300 & -190 & -210\\148 & 101 & 104\\308 & 176 & 229\end{matrix}\right],\quad e_1 = \left[\begin{matrix}1\\-4\\4\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-2\\-3\\1\end{matrix}\right],\quad e_3 = \left[\begin{matrix}2\\-2\\4\end{matrix}\right]$$Вариант N 14
+
+$$A = \left[\begin{matrix}-109 & 42 & 39\\-144 & 53 & 54\\-156 & 60 & 56\end{matrix}\right],\quad e_1 = \left[\begin{matrix}3\\-4\\4\end{matrix}\right],\quad e_2 = \left[\begin{matrix}1\\4\\-1\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-3\\-1\\-2\end{matrix}\right]$$Вариант N 15
+
+$$A = \left[\begin{matrix}309 & 103 & 54\\-95 & 27 & 150\\138 & 222 & 148\end{matrix}\right],\quad e_1 = \left[\begin{matrix}2\\3\\3\end{matrix}\right],\quad e_2 = \left[\begin{matrix}4\\-3\\3\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-3\\-4\\3\end{matrix}\right]$$Вариант N 16
+
+$$A = \left[\begin{matrix}89 & -81 & 18\\102 & -94 & 24\\36 & -36 & 17\end{matrix}\right],\quad e_1 = \left[\begin{matrix}3\\-4\\2\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-3\\4\\-3\end{matrix}\right],\quad e_3 = \left[\begin{matrix}1\\-2\\4\end{matrix}\right]$$Вариант N 17
+
+$$A = \left[\begin{matrix}169 & 171 & -165\\24 & 29 & -24\\196 & 203 & -192\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-3\\4\\-3\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-3\\-3\\-4\end{matrix}\right],\quad e_3 = \left[\begin{matrix}3\\-3\\3\end{matrix}\right]$$Вариант N 18
+
+$$A = \left[\begin{matrix}-342 & 468 & 546\\-370 & 509 & 600\\102 & -141 & -168\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-2\\-3\\-2\end{matrix}\right],\quad e_2 = \left[\begin{matrix}1\\3\\3\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-3\\1\\4\end{matrix}\right]$$Вариант N 19
+
+$$A = \left[\begin{matrix}-10 & 12 & 9\\-6 & 8 & 3\\-6 & 12 & 11\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-2\\2\\1\end{matrix}\right],\quad e_2 = \left[\begin{matrix}1\\-4\\-2\end{matrix}\right],\quad e_3 = \left[\begin{matrix}1\\-1\\-1\end{matrix}\right]$$Вариант N 20
+
+$$A = \left[\begin{matrix}-37 & 120 & -120\\-162 & 587 & -591\\-152 & 554 & -558\end{matrix}\right],\quad e_1 = \left[\begin{matrix}1\\-4\\-1\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-4\\-2\\3\end{matrix}\right],\quad e_3 = \left[\begin{matrix}4\\3\\-3\end{matrix}\right]$$Вариант N 21
+
+$$A = \left[\begin{matrix}-185 & -3 & -348\\103 & -35 & 244\\76 & -12 & 164\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-1\\1\\2\end{matrix}\right],\quad e_2 = \left[\begin{matrix}1\\3\\2\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-4\\-2\\1\end{matrix}\right]$$Вариант N 22
+
+$$A = \left[\begin{matrix}21 & -6 & 3\\-23 & -38 & 39\\-37 & -106 & 93\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-1\\-3\\-1\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-2\\2\\-4\end{matrix}\right],\quad e_3 = \left[\begin{matrix}1\\-1\\3\end{matrix}\right]$$Вариант N 23
+
+$$A = \left[\begin{matrix}-58 & -52 & 64\\74 & 68 & -62\\-2 & -2 & 11\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-3\\2\\4\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-2\\2\\4\end{matrix}\right],\quad e_3 = \left[\begin{matrix}4\\4\\2\end{matrix}\right]$$Вариант N 24
+
+$$A = \left[\begin{matrix}78 & 0 & 60\\61 & 0 & 47\\-103 & -6 & -83\end{matrix}\right],\quad e_1 = \left[\begin{matrix}1\\-3\\-1\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-3\\2\\-2\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-1\\-1\\-2\end{matrix}\right]$$Вариант N 25
+
+$$A = \left[\begin{matrix}51 & -158 & -27\\-50 & 159 & 60\\118 & -262 & -134\end{matrix}\right],\quad e_1 = \left[\begin{matrix}1\\-2\\-1\end{matrix}\right],\quad e_2 = \left[\begin{matrix}3\\2\\4\end{matrix}\right],\quad e_3 = \left[\begin{matrix}1\\3\\1\end{matrix}\right]$$Вариант N 26
+
+$$A = \left[\begin{matrix}-47 & -60 & -84\\-3 & -8 & -6\\33 & 36 & 58\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-3\\1\\-2\end{matrix}\right],\quad e_2 = \left[\begin{matrix}4\\-4\\1\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-4\\1\\-3\end{matrix}\right]$$Вариант N 27
+
+$$A = \left[\begin{matrix}-129 & -154 & 44\\118 & 140 & -38\\56 & 68 & -21\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-4\\1\\2\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-4\\2\\3\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-1\\-2\\-2\end{matrix}\right]$$Вариант N 28
+
+$$A = \left[\begin{matrix}498 & -516 & 16\\512 & -594 & 88\\268 & -342 & 96\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-1\\4\\2\end{matrix}\right],\quad e_2 = \left[\begin{matrix}3\\-1\\-3\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-4\\-4\\1\end{matrix}\right]$$Вариант N 29
+
+$$A = \left[\begin{matrix}121 & -111 & 93\\38 & -30 & 66\\-35 & 105 & -63\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-1\\3\\-1\end{matrix}\right],\quad e_2 = \left[\begin{matrix}3\\-2\\3\end{matrix}\right],\quad e_3 = \left[\begin{matrix}1\\1\\-3\end{matrix}\right]$$Вариант N 30
+
+$$A = \left[\begin{matrix}31 & -78 & 78\\-138 & 328 & -330\\-151 & 362 & -364\end{matrix}\right],\quad e_1 = \left[\begin{matrix}3\\-1\\1\end{matrix}\right],\quad e_2 = \left[\begin{matrix}4\\2\\-3\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-3\\-2\\3\end{matrix}\right]$$Вариант N 31
+
+$$A = \left[\begin{matrix}-71 & 144 & -168\\96 & -219 & 248\\90 & -210 & 235\end{matrix}\right],\quad e_1 = \left[\begin{matrix}3\\-3\\2\end{matrix}\right],\quad e_2 = \left[\begin{matrix}3\\2\\-3\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-1\\-4\\4\end{matrix}\right]$$Вариант N 32
+
+$$A = \left[\begin{matrix}93 & 69 & -38\\-95 & -71 & 50\\-9 & -9 & 22\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-3\\-1\\-4\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-3\\-1\\-3\end{matrix}\right],\quad e_3 = \left[\begin{matrix}2\\2\\1\end{matrix}\right]$$Вариант N 33
+
+$$A = \left[\begin{matrix}-307 & -152 & -132\\564 & 279 & 246\\72 & 36 & 29\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-3\\-4\\4\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-2\\-2\\2\end{matrix}\right],\quad e_3 = \left[\begin{matrix}3\\-1\\2\end{matrix}\right]$$Вариант N 34
+
+$$A = \left[\begin{matrix}55 & -108 & 68\\74 & -132 & 76\\52 & -84 & 41\end{matrix}\right],\quad e_1 = \left[\begin{matrix}3\\2\\2\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-4\\1\\-4\end{matrix}\right],\quad e_3 = \left[\begin{matrix}2\\-4\\3\end{matrix}\right]$$Вариант N 35
+
+$$A = \left[\begin{matrix}15 & -12 & 6\\-53 & 54 & -26\\-133 & 132 & -64\end{matrix}\right],\quad e_1 = \left[\begin{matrix}2\\-3\\-3\end{matrix}\right],\quad e_2 = \left[\begin{matrix}3\\4\\2\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-1\\-2\\-1\end{matrix}\right]$$Вариант N 36
+
+$$A = \left[\begin{matrix}-17 & -10 & -12\\-36 & -39 & -40\\39 & 33 & 35\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-3\\-3\\1\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-1\\3\\2\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-2\\2\\2\end{matrix}\right]$$Вариант N 37
+
+$$A = \left[\begin{matrix}36 & 16 & 16\\-31 & -22 & 2\\-1 & 10 & -14\end{matrix}\right],\quad e_1 = \left[\begin{matrix}4\\-4\\2\end{matrix}\right],\quad e_2 = \left[\begin{matrix}4\\-2\\4\end{matrix}\right],\quad e_3 = \left[\begin{matrix}4\\-2\\-4\end{matrix}\right]$$Вариант N 38
+
+$$A = \left[\begin{matrix}172 & -189 & -41\\164 & -201 & -61\\-4 & 9 & 29\end{matrix}\right],\quad e_1 = \left[\begin{matrix}1\\-4\\2\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-1\\3\\-3\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-4\\-1\\-1\end{matrix}\right]$$Вариант N 39
+
+$$A = \left[\begin{matrix}69 & -72 & -72\\8 & -1 & -10\\46 & -56 & -47\end{matrix}\right],\quad e_1 = \left[\begin{matrix}3\\-1\\-2\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-4\\-4\\2\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-4\\2\\2\end{matrix}\right]$$Вариант N 40
+
+$$A = \left[\begin{matrix}17 & 32 & 32\\-52 & -256 & -268\\44 & 233 & 245\end{matrix}\right],\quad e_1 = \left[\begin{matrix}4\\-4\\1\end{matrix}\right],\quad e_2 = \left[\begin{matrix}4\\3\\4\end{matrix}\right],\quad e_3 = \left[\begin{matrix}4\\4\\4\end{matrix}\right]$$Вариант N 41
+
+$$A = \left[\begin{matrix}84 & -296 & 202\\-42 & -346 & 302\\-15 & -508 & 431\end{matrix}\right],\quad e_1 = \left[\begin{matrix}1\\4\\-3\end{matrix}\right],\quad e_2 = \left[\begin{matrix}4\\2\\4\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-3\\-4\\-2\end{matrix}\right]$$Вариант N 42
+
+$$A = \left[\begin{matrix}6 & -10 & 4\\-48 & -43 & -44\\\frac{93}{2} & 47 & 55\end{matrix}\right],\quad e_1 = \left[\begin{matrix}2\\-3\\3\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-4\\-4\\2\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-4\\-2\\4\end{matrix}\right]$$Вариант N 43
+
+$$A = \left[\begin{matrix}19 & 445 & -348\\63 & 81 & -204\\37 & 43 & -228\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-1\\-1\\1\end{matrix}\right],\quad e_2 = \left[\begin{matrix}3\\-4\\-1\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-2\\3\\-4\end{matrix}\right]$$Вариант N 44
+
+$$A = \left[\begin{matrix}67 & -34 & -44\\-184 & 97 & 124\\240 & -120 & -157\end{matrix}\right],\quad e_1 = \left[\begin{matrix}4\\4\\1\end{matrix}\right],\quad e_2 = \left[\begin{matrix}4\\-1\\-1\end{matrix}\right],\quad e_3 = \left[\begin{matrix}2\\-2\\-1\end{matrix}\right]$$Вариант N 45
+
+$$A = \left[\begin{matrix}103 & -69 & 72\\70 & -46 & 50\\-82 & 62 & -52\end{matrix}\right],\quad e_1 = \left[\begin{matrix}2\\2\\1\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-4\\-2\\1\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-1\\1\\2\end{matrix}\right]$$Вариант N 46
+
+$$A = \left[\begin{matrix}271 & 249 & -669\\216 & 56 & -392\\285 & 75 & -551\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-1\\-3\\-4\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-3\\4\\3\end{matrix}\right],\quad e_3 = \left[\begin{matrix}3\\1\\4\end{matrix}\right]$$Вариант N 47
+
+$$A = \left[\begin{matrix}-73 & 45 & 10\\-94 & 58 & 12\\-36 & 24 & 0\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-3\\2\\2\end{matrix}\right],\quad e_2 = \left[\begin{matrix}3\\-3\\-1\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-2\\4\\-1\end{matrix}\right]$$Вариант N 48
+
+$$A = \left[\begin{matrix}-3 & -13 & 13\\-9 & -7 & 9\\4 & -4 & 6\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-1\\-1\\2\end{matrix}\right],\quad e_2 = \left[\begin{matrix}1\\1\\2\end{matrix}\right],\quad e_3 = \left[\begin{matrix}1\\-1\\-2\end{matrix}\right]$$Вариант N 49
+
+$$A = \left[\begin{matrix}106 & 11 & -57\\-124 & 67 & -69\\-168 & -54 & 48\end{matrix}\right],\quad e_1 = \left[\begin{matrix}4\\2\\-4\end{matrix}\right],\quad e_2 = \left[\begin{matrix}1\\-4\\-2\end{matrix}\right],\quad e_3 = \left[\begin{matrix}3\\3\\3\end{matrix}\right]$$Вариант N 50
+
+$$A = \left[\begin{matrix}144 & -216 & 54\\54 & -70 & 26\\-99 & 172 & -23\end{matrix}\right],\quad e_1 = \left[\begin{matrix}3\\2\\1\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-4\\-1\\-4\end{matrix}\right],\quad e_3 = \left[\begin{matrix}2\\2\\-1\end{matrix}\right]$$Вариант N 51
+
+$$A = \left[\begin{matrix}-3 & -83 & -20\\-3 & 5 & -4\\6 & 62 & 20\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-3\\3\\-1\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-1\\-1\\3\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-4\\4\\-1\end{matrix}\right]$$Вариант N 52
+
+$$A = \left[\begin{matrix}66 & -90 & 90\\164 & -196 & 178\\104 & -112 & 94\end{matrix}\right],\quad e_1 = \left[\begin{matrix}3\\3\\-2\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-3\\1\\3\end{matrix}\right],\quad e_3 = \left[\begin{matrix}3\\-4\\-3\end{matrix}\right]$$Вариант N 53
+
+$$A = \left[\begin{matrix}8 & -90 & -210\\12 & -98 & -222\\-12 & 46 & 90\end{matrix}\right],\quad e_1 = \left[\begin{matrix}3\\2\\-3\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-4\\-3\\1\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-3\\-3\\-4\end{matrix}\right]$$Вариант N 54
+
+$$A = \left[\begin{matrix}-33 & -42 & 12\\44 & 73 & -32\\34 & 62 & -31\end{matrix}\right],\quad e_1 = \left[\begin{matrix}1\\-1\\-2\end{matrix}\right],\quad e_2 = \left[\begin{matrix}3\\1\\-4\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-3\\-2\\2\end{matrix}\right]$$Вариант N 55
+
+$$A = \left[\begin{matrix}32 & -12 & -44\\-44 & 48 & -76\\20 & -4 & 88\end{matrix}\right],\quad e_1 = \left[\begin{matrix}1\\1\\2\end{matrix}\right],\quad e_2 = \left[\begin{matrix}1\\-1\\-1\end{matrix}\right],\quad e_3 = \left[\begin{matrix}2\\-1\\3\end{matrix}\right]$$Вариант N 56
+
+$$A = \left[\begin{matrix}-104 & 120 & -90\\714 & -608 & 477\\1032 & -912 & 712\end{matrix}\right],\quad e_1 = \left[\begin{matrix}2\\-3\\-4\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-4\\-2\\4\end{matrix}\right],\quad e_3 = \left[\begin{matrix}3\\1\\-3\end{matrix}\right]$$Вариант N 57
+
+$$A = \left[\begin{matrix}46 & 98 & 52\\-19 & -17 & -38\\-22 & -106 & -24\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-4\\-1\\1\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-2\\2\\3\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-3\\-2\\2\end{matrix}\right]$$Вариант N 58
+
+$$A = \left[\begin{matrix}8 & 2 & -2\\2 & 8 & -1\\6 & 6 & 1\end{matrix}\right],\quad e_1 = \left[\begin{matrix}1\\2\\4\end{matrix}\right],\quad e_2 = \left[\begin{matrix}1\\1\\4\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-1\\-1\\-2\end{matrix}\right]$$Вариант N 59
+
+$$A = \left[\begin{matrix}75 & 39 & -96\\-67 & -43 & 72\\38 & 18 & -52\end{matrix}\right],\quad e_1 = \left[\begin{matrix}3\\-1\\-1\end{matrix}\right],\quad e_2 = \left[\begin{matrix}1\\1\\-3\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-4\\4\\-3\end{matrix}\right]$$Вариант N 60
+
+$$A = \left[\begin{matrix}-46 & 93 & 12\\132 & -22 & -168\\-42 & -57 & -28\end{matrix}\right],\quad e_1 = \left[\begin{matrix}2\\-2\\-2\end{matrix}\right],\quad e_2 = \left[\begin{matrix}1\\-2\\3\end{matrix}\right],\quad e_3 = \left[\begin{matrix}4\\2\\4\end{matrix}\right]$$Вариант N 61
+
+$$A = \left[\begin{matrix}-285 & -408 & 228\\232 & 331 & -180\\40 & 56 & -25\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-2\\2\\-3\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-3\\2\\-4\end{matrix}\right],\quad e_3 = \left[\begin{matrix}3\\3\\1\end{matrix}\right]$$Вариант N 62
+
+$$A = \left[\begin{matrix}17 & -24 & 35\\-246 & 210 & -318\\-169 & 156 & -235\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-4\\3\\2\end{matrix}\right],\quad e_2 = \left[\begin{matrix}1\\-2\\3\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-2\\3\\-4\end{matrix}\right]$$Вариант N 63
+
+$$A = \left[\begin{matrix}60 & 20 & 40\\-4 & 30 & -10\\-28 & -20 & -5\end{matrix}\right],\quad e_1 = \left[\begin{matrix}3\\-4\\4\end{matrix}\right],\quad e_2 = \left[\begin{matrix}2\\-2\\4\end{matrix}\right],\quad e_3 = \left[\begin{matrix}4\\-4\\3\end{matrix}\right]$$Вариант N 64
+
+$$A = \left[\begin{matrix}-11 & -1 & 1\\-32 & -2 & -1\\-44 & 2 & -5\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-1\\3\\-4\end{matrix}\right],\quad e_2 = \left[\begin{matrix}3\\1\\-1\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-2\\-1\\1\end{matrix}\right]$$Вариант N 65
+
+$$A = \left[\begin{matrix}-50 & -98 & 32\\-178 & -148 & 61\\-522 & -576 & 225\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-4\\-2\\3\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-1\\4\\3\end{matrix}\right],\quad e_3 = \left[\begin{matrix}1\\-1\\-1\end{matrix}\right]$$Вариант N 66
+
+$$A = \left[\begin{matrix}71 & -36 & 12\\102 & -43 & 24\\-138 & 60 & -31\end{matrix}\right],\quad e_1 = \left[\begin{matrix}2\\1\\4\end{matrix}\right],\quad e_2 = \left[\begin{matrix}4\\-2\\1\end{matrix}\right],\quad e_3 = \left[\begin{matrix}4\\-1\\3\end{matrix}\right]$$Вариант N 67
+
+$$A = \left[\begin{matrix}-62 & -32 & 70\\52 & 40 & -44\\-56 & -20 & 70\end{matrix}\right],\quad e_1 = \left[\begin{matrix}4\\4\\-2\end{matrix}\right],\quad e_2 = \left[\begin{matrix}2\\4\\1\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-3\\-2\\4\end{matrix}\right]$$Вариант N 68
+
+$$A = \left[\begin{matrix}345 & -120 & 120\\-103 & 449 & 231\\-43 & 114 & 566\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-2\\-3\\-1\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-3\\4\\2\end{matrix}\right],\quad e_3 = \left[\begin{matrix}3\\-4\\3\end{matrix}\right]$$Вариант N 69
+
+$$A = \left[\begin{matrix}-9 & -118 & -71\\-2 & -82 & -46\\8 & 158 & 92\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-2\\2\\-1\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-1\\-1\\-4\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-2\\1\\-3\end{matrix}\right]$$Вариант N 70
+
+$$A = \left[\begin{matrix}62 & -36 & 36\\207 & -166 & 126\\213 & -234 & 194\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-4\\-1\\1\end{matrix}\right],\quad e_2 = \left[\begin{matrix}3\\-2\\-3\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-1\\2\\3\end{matrix}\right]$$Вариант N 71
+
+$$A = \left[\begin{matrix}-97 & -160 & 200\\62 & 104 & -142\\8 & 14 & -25\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-1\\-3\\-2\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-2\\-4\\-3\end{matrix}\right],\quad e_3 = \left[\begin{matrix}3\\-2\\2\end{matrix}\right]$$Вариант N 72
+
+$$A = \left[\begin{matrix}110 & 2 & 86\\72 & 8 & 60\\-123 & -1 & -95\end{matrix}\right],\quad e_1 = \left[\begin{matrix}3\\1\\-3\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-1\\2\\-1\end{matrix}\right],\quad e_3 = \left[\begin{matrix}2\\2\\-3\end{matrix}\right]$$Вариант N 73
+
+$$A = \left[\begin{matrix}57 & -78 & 38\\-20 & -1 & -4\\-126 & 126 & -91\end{matrix}\right],\quad e_1 = \left[\begin{matrix}4\\3\\1\end{matrix}\right],\quad e_2 = \left[\begin{matrix}3\\-3\\-1\end{matrix}\right],\quad e_3 = \left[\begin{matrix}2\\1\\1\end{matrix}\right]$$Вариант N 74
+
+$$A = \left[\begin{matrix}-321 & 432 & 162\\-182 & 241 & 98\\-122 & 172 & 50\end{matrix}\right],\quad e_1 = \left[\begin{matrix}3\\1\\-2\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-4\\1\\4\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-2\\-4\\-1\end{matrix}\right]$$Вариант N 75
+
+$$A = \left[\begin{matrix}-26 & 6 & -4\\-46 & -66 & 52\\-65 & -75 & 62\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-2\\-1\\4\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-4\\3\\-3\end{matrix}\right],\quad e_3 = \left[\begin{matrix}4\\-2\\2\end{matrix}\right]$$Вариант N 76
+
+$$A = \left[\begin{matrix}16 & -2 & -6\\-108 & 11 & 18\\32 & 1 & 8\end{matrix}\right],\quad e_1 = \left[\begin{matrix}4\\-2\\3\end{matrix}\right],\quad e_2 = \left[\begin{matrix}1\\-1\\-1\end{matrix}\right],\quad e_3 = \left[\begin{matrix}2\\-3\\-3\end{matrix}\right]$$Вариант N 77
+
+$$A = \left[\begin{matrix}-202 & -216 & -276\\-28 & -80 & -56\\145 & 220 & 226\end{matrix}\right],\quad e_1 = \left[\begin{matrix}1\\-1\\4\end{matrix}\right],\quad e_2 = \left[\begin{matrix}4\\-2\\1\end{matrix}\right],\quad e_3 = \left[\begin{matrix}2\\-2\\4\end{matrix}\right]$$Вариант N 78
+
+$$A = \left[\begin{matrix}104 & 87 & 79\\-184 & -150 & -116\\-16 & -12 & -26\end{matrix}\right],\quad e_1 = \left[\begin{matrix}2\\4\\4\end{matrix}\right],\quad e_2 = \left[\begin{matrix}1\\3\\3\end{matrix}\right],\quad e_3 = \left[\begin{matrix}3\\-4\\2\end{matrix}\right]$$Вариант N 79
+
+$$A = \left[\begin{matrix}159 & 23 & -160\\36 & 4 & -36\\176 & 26 & -177\end{matrix}\right],\quad e_1 = \left[\begin{matrix}2\\-3\\-4\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-4\\-1\\-1\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-1\\3\\4\end{matrix}\right]$$Вариант N 80
+
+$$A = \left[\begin{matrix}19 & -18 & 2\\36 & -31 & 2\\42 & -30 & -3\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-3\\-1\\3\end{matrix}\right],\quad e_2 = \left[\begin{matrix}3\\3\\-1\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-1\\-2\\-1\end{matrix}\right]$$Вариант N 81
+
+$$A = \left[\begin{matrix}7 & 8 & 1\\-20 & -18 & -4\\-7 & -4 & -9\end{matrix}\right],\quad e_1 = \left[\begin{matrix}3\\-2\\-2\end{matrix}\right],\quad e_2 = \left[\begin{matrix}2\\-2\\-1\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-1\\2\\-2\end{matrix}\right]$$Вариант N 82
+
+$$A = \left[\begin{matrix}-2 & 12 & -12\\6 & 22 & -30\\12 & 6 & -14\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-1\\-3\\1\end{matrix}\right],\quad e_2 = \left[\begin{matrix}1\\1\\-2\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-1\\1\\2\end{matrix}\right]$$Вариант N 83
+
+$$A = \left[\begin{matrix}62 & 52 & -97\\-34 & -32 & 53\\-12 & -24 & -30\end{matrix}\right],\quad e_1 = \left[\begin{matrix}2\\2\\-3\end{matrix}\right],\quad e_2 = \left[\begin{matrix}4\\4\\-3\end{matrix}\right],\quad e_3 = \left[\begin{matrix}1\\3\\2\end{matrix}\right]$$Вариант N 84
+
+$$A = \left[\begin{matrix}212 & 100 & -160\\-32 & -40 & 22\\284 & 124 & -217\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-3\\-2\\4\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-1\\3\\4\end{matrix}\right],\quad e_3 = \left[\begin{matrix}2\\2\\-3\end{matrix}\right]$$Вариант N 85
+
+$$A = \left[\begin{matrix}-8 & -20 & -11\\36 & 88 & 48\\-66 & -146 & -79\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-3\\2\\-4\end{matrix}\right],\quad e_2 = \left[\begin{matrix}1\\-3\\-4\end{matrix}\right],\quad e_3 = \left[\begin{matrix}1\\-2\\-2\end{matrix}\right]$$Вариант N 86
+
+$$A = \left[\begin{matrix}81 & -116 & 54\\10 & -21 & 6\\-108 & 144 & -73\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-3\\4\\-1\end{matrix}\right],\quad e_2 = \left[\begin{matrix}3\\-2\\-2\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-2\\3\\-1\end{matrix}\right]$$Вариант N 87
+
+$$A = \left[\begin{matrix}-8 & 6 & 6\\18 & -25 & -22\\-22 & 27 & 24\end{matrix}\right],\quad e_1 = \left[\begin{matrix}2\\-2\\1\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-3\\-3\\-1\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-3\\-2\\-1\end{matrix}\right]$$Вариант N 88
+
+$$A = \left[\begin{matrix}249 & 230 & 65\\-103 & -90 & -31\\-431 & -458 & -103\end{matrix}\right],\quad e_1 = \left[\begin{matrix}1\\3\\4\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-2\\4\\3\end{matrix}\right],\quad e_3 = \left[\begin{matrix}1\\1\\1\end{matrix}\right]$$Вариант N 89
+
+$$A = \left[\begin{matrix}30 & -6 & -24\\22 & 2 & -8\\-1 & 1 & 8\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-1\\-1\\-3\end{matrix}\right],\quad e_2 = \left[\begin{matrix}1\\1\\1\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-4\\4\\4\end{matrix}\right]$$Вариант N 90
+
+$$A = \left[\begin{matrix}111 & -308 & -236\\-102 & -244 & -307\\-186 & 202 & 211\end{matrix}\right],\quad e_1 = \left[\begin{matrix}3\\4\\3\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-2\\-3\\4\end{matrix}\right],\quad e_3 = \left[\begin{matrix}1\\-1\\4\end{matrix}\right]$$Вариант N 91
+
+$$A = \left[\begin{matrix}-379 & -76 & -11\\176 & -31 & 184\\340 & 460 & -40\end{matrix}\right],\quad e_1 = \left[\begin{matrix}2\\4\\3\end{matrix}\right],\quad e_2 = \left[\begin{matrix}3\\-4\\2\end{matrix}\right],\quad e_3 = \left[\begin{matrix}2\\3\\-1\end{matrix}\right]$$Вариант N 92
+
+$$A = \left[\begin{matrix}119 & 153 & 316\\378 & 38 & 368\\84 & 24 & -108\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-3\\2\\2\end{matrix}\right],\quad e_2 = \left[\begin{matrix}3\\-1\\1\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-4\\-3\\2\end{matrix}\right]$$Вариант N 93
+
+$$A = \left[\begin{matrix}-268 & 234 & -128\\-416 & 366 & -204\\-216 & 192 & -110\end{matrix}\right],\quad e_1 = \left[\begin{matrix}3\\-4\\-4\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-3\\2\\3\end{matrix}\right],\quad e_3 = \left[\begin{matrix}2\\1\\-1\end{matrix}\right]$$Вариант N 94
+
+$$A = \left[\begin{matrix}-25 & -36 & 36\\-16 & -31 & 26\\-34 & -57 & 52\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-3\\-2\\1\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-4\\-3\\3\end{matrix}\right],\quad e_3 = \left[\begin{matrix}4\\3\\-2\end{matrix}\right]$$Вариант N 95
+
+$$A = \left[\begin{matrix}9 & 64 & -88\\-196 & 299 & -352\\-190 & 250 & -297\end{matrix}\right],\quad e_1 = \left[\begin{matrix}1\\4\\2\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-4\\1\\-3\end{matrix}\right],\quad e_3 = \left[\begin{matrix}4\\-2\\4\end{matrix}\right]$$Вариант N 96
+
+$$A = \left[\begin{matrix}-59 & 148 & 82\\-90 & 191 & 94\\96 & -144 & -41\end{matrix}\right],\quad e_1 = \left[\begin{matrix}4\\-3\\-1\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-4\\1\\-2\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-1\\-2\\-3\end{matrix}\right]$$Вариант N 97
+
+$$A = \left[\begin{matrix}43 & 80 & -100\\13 & 29 & -31\\27 & 54 & -66\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-2\\-1\\-1\end{matrix}\right],\quad e_2 = \left[\begin{matrix}2\\-2\\-2\end{matrix}\right],\quad e_3 = \left[\begin{matrix}2\\3\\2\end{matrix}\right]$$Вариант N 98
+
+$$A = \left[\begin{matrix}13 & 8 & 4\\156 & -129 & 46\\208 & -184 & 77\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-2\\-4\\-4\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-4\\2\\4\end{matrix}\right],\quad e_3 = \left[\begin{matrix}3\\-2\\-1\end{matrix}\right]$$Вариант N 99
+
+$$A = \left[\begin{matrix}-26 & 30 & 96\\-504 & 196 & 504\\198 & -54 & -128\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-2\\3\\-3\end{matrix}\right],\quad e_2 = \left[\begin{matrix}1\\-1\\-1\end{matrix}\right],\quad e_3 = \left[\begin{matrix}2\\-3\\-4\end{matrix}\right]$$Вариант N 100
+
+$$A = \left[\begin{matrix}144 & -86 & 22\\219 & -131 & 43\\-30 & 20 & 8\end{matrix}\right],\quad e_1 = \left[\begin{matrix}3\\-1\\-3\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-2\\1\\2\end{matrix}\right],\quad e_3 = \left[\begin{matrix}1\\3\\2\end{matrix}\right]$$Вариант N 101
+
+$$A = \left[\begin{matrix}467 & 73 & 565\\-428 & -82 & -500\\-310 & -40 & -390\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-2\\-1\\4\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-3\\1\\1\end{matrix}\right],\quad e_3 = \left[\begin{matrix}1\\-3\\4\end{matrix}\right]$$Вариант N 102
+
+$$A = \left[\begin{matrix}-69 & 107 & -38\\-14 & 26 & -7\\92 & -130 & 53\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-2\\2\\4\end{matrix}\right],\quad e_2 = \left[\begin{matrix}3\\-4\\-2\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-1\\1\\3\end{matrix}\right]$$Вариант N 103
+
+$$A = \left[\begin{matrix}-7 & 7 & -28\\12 & 10 & -12\\-18 & 6 & -17\end{matrix}\right],\quad e_1 = \left[\begin{matrix}3\\4\\-3\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-1\\1\\1\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-3\\-4\\-4\end{matrix}\right]$$Вариант N 104
+
+$$A = \left[\begin{matrix}-27 & 64 & 72\\-48 & 93 & 96\\24 & -40 & -39\end{matrix}\right],\quad e_1 = \left[\begin{matrix}2\\-4\\2\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-3\\4\\-4\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-4\\2\\-4\end{matrix}\right]$$Вариант N 105
+
+$$A = \left[\begin{matrix}-125 & -164 & -43\\-18 & -19 & -6\\444 & 564 & 152\end{matrix}\right],\quad e_1 = \left[\begin{matrix}3\\4\\-3\end{matrix}\right],\quad e_2 = \left[\begin{matrix}4\\-4\\-3\end{matrix}\right],\quad e_3 = \left[\begin{matrix}1\\1\\-1\end{matrix}\right]$$Вариант N 106
+
+$$A = \left[\begin{matrix}-132 & 156 & 276\\70 & -88 & -150\\-102 & 123 & 215\end{matrix}\right],\quad e_1 = \left[\begin{matrix}1\\-4\\1\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-1\\-3\\-4\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-2\\3\\-4\end{matrix}\right]$$Вариант N 107
+
+$$A = \left[\begin{matrix}-147 & 80 & -20\\-262 & 216 & 22\\-54 & -9 & 7\end{matrix}\right],\quad e_1 = \left[\begin{matrix}4\\-4\\3\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-2\\1\\-3\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-4\\-1\\-1\end{matrix}\right]$$Вариант N 108
+
+$$A = \left[\begin{matrix}-13 & 23 & 41\\-31 & 41 & 61\\30 & -30 & -32\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-3\\-4\\-3\end{matrix}\right],\quad e_2 = \left[\begin{matrix}3\\2\\3\end{matrix}\right],\quad e_3 = \left[\begin{matrix}2\\-1\\3\end{matrix}\right]$$Вариант N 109
+
+$$A = \left[\begin{matrix}36 & 3 & 18\\130 & -1 & 50\\-92 & 2 & -34\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-1\\4\\-2\end{matrix}\right],\quad e_2 = \left[\begin{matrix}1\\-2\\-1\end{matrix}\right],\quad e_3 = \left[\begin{matrix}1\\-1\\-2\end{matrix}\right]$$Вариант N 110
+
+$$A = \left[\begin{matrix}27 & -13 & -5\\-15 & 25 & 9\\4 & 4 & 12\end{matrix}\right],\quad e_1 = \left[\begin{matrix}1\\3\\-4\end{matrix}\right],\quad e_2 = \left[\begin{matrix}1\\3\\4\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-1\\3\\2\end{matrix}\right]$$Вариант N 111
+
+$$A = \left[\begin{matrix}-10 & 52 & -136\\10 & -44 & 120\\7 & -14 & 48\end{matrix}\right],\quad e_1 = \left[\begin{matrix}1\\-3\\-1\end{matrix}\right],\quad e_2 = \left[\begin{matrix}2\\-2\\-3\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-2\\-4\\4\end{matrix}\right]$$Вариант N 112
+
+$$A = \left[\begin{matrix}59 & 69 & 117\\-27 & -37 & -45\\-12 & -12 & -28\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-1\\-2\\-1\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-1\\-2\\-3\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-3\\-4\\1\end{matrix}\right]$$Вариант N 113
+
+$$A = \left[\begin{matrix}-432 & 4 & -162\\378 & 54 & 378\\108 & 164 & -162\end{matrix}\right],\quad e_1 = \left[\begin{matrix}3\\-1\\3\end{matrix}\right],\quad e_2 = \left[\begin{matrix}4\\-1\\-1\end{matrix}\right],\quad e_3 = \left[\begin{matrix}3\\2\\3\end{matrix}\right]$$Вариант N 114
+
+$$A = \left[\begin{matrix}-421 & -408 & 222\\333 & 322 & -177\\-194 & -190 & 99\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-1\\3\\4\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-3\\2\\4\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-3\\-3\\-2\end{matrix}\right]$$Вариант N 115
+
+$$A = \left[\begin{matrix}-163 & 126 & 38\\-234 & 93 & -126\\205 & -135 & 40\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-1\\-2\\3\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-3\\4\\-1\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-4\\4\\3\end{matrix}\right]$$Вариант N 116
+
+$$A = \left[\begin{matrix}23 & -24 & 66\\22 & -23 & 57\\-6 & 6 & -14\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-2\\-1\\-2\end{matrix}\right],\quad e_2 = \left[\begin{matrix}3\\1\\2\end{matrix}\right],\quad e_3 = \left[\begin{matrix}3\\-1\\-3\end{matrix}\right]$$Вариант N 117
+
+$$A = \left[\begin{matrix}733 & 36 & 711\\-348 & -56 & -324\\-636 & -96 & -608\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-1\\4\\4\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-4\\4\\-1\end{matrix}\right],\quad e_3 = \left[\begin{matrix}1\\3\\4\end{matrix}\right]$$Вариант N 118
+
+$$A = \left[\begin{matrix}-1 & -15 & -50\\8 & 0 & -2\\2 & - \frac{57}{2} & -44\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-2\\2\\1\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-3\\-4\\-3\end{matrix}\right],\quad e_3 = \left[\begin{matrix}2\\-4\\-4\end{matrix}\right]$$Вариант N 119
+
+$$A = \left[\begin{matrix}-56 & 29 & 67\\-44 & 24 & 50\\-28 & 14 & 36\end{matrix}\right],\quad e_1 = \left[\begin{matrix}2\\4\\2\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-2\\-2\\-1\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-1\\-4\\-3\end{matrix}\right]$$Вариант N 120
+
+$$A = \left[\begin{matrix}34 & -10 & -10\\-172 & 72 & 64\\292 & -108 & -100\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-4\\-3\\2\end{matrix}\right],\quad e_2 = \left[\begin{matrix}1\\1\\2\end{matrix}\right],\quad e_3 = \left[\begin{matrix}1\\1\\1\end{matrix}\right]$$Вариант N 121
+
+$$A = \left[\begin{matrix}-17 & 1 & 54\\57 & -33 & -6\\-42 & 14 & 62\end{matrix}\right],\quad e_1 = \left[\begin{matrix}3\\-4\\-3\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-1\\2\\1\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-3\\3\\4\end{matrix}\right]$$Вариант N 122
+
+$$A = \left[\begin{matrix}-16 & -9 & 3\\-16 & -12 & 8\\-72 & -42 & 26\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-2\\-4\\2\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-3\\-3\\1\end{matrix}\right],\quad e_3 = \left[\begin{matrix}1\\1\\-1\end{matrix}\right]$$Вариант N 123
+
+$$A = \left[\begin{matrix}9 & -126 & -224\\-28 & 394 & 700\\14 & -224 & -397\end{matrix}\right],\quad e_1 = \left[\begin{matrix}4\\1\\1\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-1\\2\\-2\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-4\\3\\-4\end{matrix}\right]$$Вариант N 124
+
+$$A = \left[\begin{matrix}0 & 30 & 52\\27 & -213 & -376\\-12 & 128 & 225\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-3\\3\\-2\end{matrix}\right],\quad e_2 = \left[\begin{matrix}2\\1\\-2\end{matrix}\right],\quad e_3 = \left[\begin{matrix}4\\1\\-3\end{matrix}\right]$$Вариант N 125
+
+$$A = \left[\begin{matrix}-164 & 96 & 16\\-238 & 134 & 28\\-278 & 162 & 28\end{matrix}\right],\quad e_1 = \left[\begin{matrix}1\\-1\\3\end{matrix}\right],\quad e_2 = \left[\begin{matrix}4\\3\\-1\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-4\\-2\\-1\end{matrix}\right]$$Вариант N 126
+
+$$A = \left[\begin{matrix}16 & -5 & 22\\-1 & 4 & -2\\-8 & 4 & -11\end{matrix}\right],\quad e_1 = \left[\begin{matrix}1\\-1\\3\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-1\\3\\1\end{matrix}\right],\quad e_3 = \left[\begin{matrix}2\\-2\\4\end{matrix}\right]$$Вариант N 127
+
+$$A = \left[\begin{matrix}8 & -17 & 20\\-11 & 2 & 4\\-4 & 4 & -1\end{matrix}\right],\quad e_1 = \left[\begin{matrix}1\\1\\4\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-1\\3\\-4\end{matrix}\right],\quad e_3 = \left[\begin{matrix}4\\-4\\4\end{matrix}\right]$$Вариант N 128
+
+$$A = \left[\begin{matrix}-40 & 24 & 84\\-135 & 71 & 186\\45 & -21 & -46\end{matrix}\right],\quad e_1 = \left[\begin{matrix}1\\-3\\2\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-1\\1\\-1\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-2\\-1\\-3\end{matrix}\right]$$Вариант N 129
+
+$$A = \left[\begin{matrix}-162 & 72 & -144\\4 & -34 & -4\\110 & -80 & 124\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-1\\2\\-3\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-4\\-2\\1\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-1\\4\\-2\end{matrix}\right]$$Вариант N 130
+
+$$A = \left[\begin{matrix}16 & -18 & -18\\6 & 22 & 27\\-54 & -18 & -23\end{matrix}\right],\quad e_1 = \left[\begin{matrix}4\\-4\\-4\end{matrix}\right],\quad e_2 = \left[\begin{matrix}4\\-3\\2\end{matrix}\right],\quad e_3 = \left[\begin{matrix}2\\-3\\2\end{matrix}\right]$$Вариант N 131
+
+$$A = \left[\begin{matrix}-14 & -216 & 512\\8 & 146 & -352\\0 & 48 & -126\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-2\\-3\\1\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-4\\-3\\3\end{matrix}\right],\quad e_3 = \left[\begin{matrix}3\\-4\\-4\end{matrix}\right]$$Вариант N 132
+
+$$A = \left[\begin{matrix}-11 & 8 & -8\\-50 & 27 & -20\\-34 & 14 & -7\end{matrix}\right],\quad e_1 = \left[\begin{matrix}4\\2\\2\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-2\\-2\\2\end{matrix}\right],\quad e_3 = \left[\begin{matrix}2\\2\\-4\end{matrix}\right]$$Вариант N 133
+
+$$A = \left[\begin{matrix}126 & -55 & 67\\-140 & 22 & -62\\-352 & 112 & -176\end{matrix}\right],\quad e_1 = \left[\begin{matrix}2\\-4\\4\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-3\\2\\2\end{matrix}\right],\quad e_3 = \left[\begin{matrix}2\\-2\\1\end{matrix}\right]$$Вариант N 134
+
+$$A = \left[\begin{matrix}-135 & -61 & -153\\-96 & -20 & -96\\171 & 69 & 189\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-3\\4\\3\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-1\\1\\-3\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-3\\4\\1\end{matrix}\right]$$Вариант N 135
+
+$$A = \left[\begin{matrix}67 & -83 & 91\\-53 & 37 & -61\\-76 & 76 & -108\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-1\\2\\1\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-3\\-2\\-1\end{matrix}\right],\quad e_3 = \left[\begin{matrix}1\\4\\1\end{matrix}\right]$$Вариант N 136
+
+$$A = \left[\begin{matrix}63 & -60 & 54\\-12 & 21 & -12\\-76 & 84 & -67\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-3\\-2\\-4\end{matrix}\right],\quad e_2 = \left[\begin{matrix}4\\3\\1\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-3\\-2\\-3\end{matrix}\right]$$Вариант N 137
+
+$$A = \left[\begin{matrix}-133 & -26 & -20\\152 & 141 & 164\\-152 & -170 & -217\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-1\\-4\\-4\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-3\\1\\-1\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-2\\2\\-1\end{matrix}\right]$$Вариант N 138
+
+$$A = \left[\begin{matrix}19 & -2 & 18\\8 & 29 & 0\\6 & 6 & 15\end{matrix}\right],\quad e_1 = \left[\begin{matrix}1\\-1\\1\end{matrix}\right],\quad e_2 = \left[\begin{matrix}1\\2\\1\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-3\\-3\\1\end{matrix}\right]$$Вариант N 139
+
+$$A = \left[\begin{matrix}-55 & -40 & 32\\56 & 41 & -34\\8 & 8 & 11\end{matrix}\right],\quad e_1 = \left[\begin{matrix}4\\-2\\-4\end{matrix}\right],\quad e_2 = \left[\begin{matrix}4\\-2\\-3\end{matrix}\right],\quad e_3 = \left[\begin{matrix}1\\-2\\1\end{matrix}\right]$$Вариант N 140
+
+$$A = \left[\begin{matrix}-177 & -44 & -156\\-48 & -11 & -42\\216 & 56 & 191\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-3\\-4\\3\end{matrix}\right],\quad e_2 = \left[\begin{matrix}2\\1\\2\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-2\\-3\\3\end{matrix}\right]$$Вариант N 141
+
+$$A = \left[\begin{matrix}102 & -388 & -106\\-14 & 48 & 14\\152 & -556 & -156\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-3\\1\\-1\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-1\\-4\\3\end{matrix}\right],\quad e_3 = \left[\begin{matrix}2\\-1\\1\end{matrix}\right]$$Вариант N 142
+
+$$A = \left[\begin{matrix}44 & 18 & -32\\126 & 81 & -126\\110 & 60 & -98\end{matrix}\right],\quad e_1 = \left[\begin{matrix}2\\1\\3\end{matrix}\right],\quad e_2 = \left[\begin{matrix}1\\-2\\2\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-2\\2\\-3\end{matrix}\right]$$Вариант N 143
+
+$$A = \left[\begin{matrix}274 & 384 & -212\\-206 & -288 & 148\\-46 & -60 & 8\end{matrix}\right],\quad e_1 = \left[\begin{matrix}2\\-2\\3\end{matrix}\right],\quad e_2 = \left[\begin{matrix}3\\-2\\4\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-1\\-4\\-2\end{matrix}\right]$$Вариант N 144
+
+$$A = \left[\begin{matrix}68 & 58 & -76\\-51 & -45 & 54\\30 & 24 & -36\end{matrix}\right],\quad e_1 = \left[\begin{matrix}3\\-1\\3\end{matrix}\right],\quad e_2 = \left[\begin{matrix}3\\-2\\2\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-2\\-1\\-4\end{matrix}\right]$$Вариант N 145
+
+$$A = \left[\begin{matrix}-106 & 186 & -234\\132 & -268 & 324\\156 & -300 & 368\end{matrix}\right],\quad e_1 = \left[\begin{matrix}2\\-2\\-3\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-2\\3\\-1\end{matrix}\right],\quad e_3 = \left[\begin{matrix}3\\-4\\-1\end{matrix}\right]$$Вариант N 146
+
+$$A = \left[\begin{matrix}72 & -184 & -124\\-111 & -46 & 11\\24 & -184 & -256\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-3\\3\\1\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-4\\-2\\4\end{matrix}\right],\quad e_3 = \left[\begin{matrix}2\\-1\\4\end{matrix}\right]$$Вариант N 147
+
+$$A = \left[\begin{matrix}279 & 63 & -336\\-112 & -15 & 140\\210 & 63 & -246\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-2\\4\\-2\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-3\\3\\3\end{matrix}\right],\quad e_3 = \left[\begin{matrix}1\\-4\\4\end{matrix}\right]$$Вариант N 148
+
+$$A = \left[\begin{matrix}362 & 368 & -208\\-330 & -350 & 220\\-87 & -108 & 108\end{matrix}\right],\quad e_1 = \left[\begin{matrix}3\\1\\3\end{matrix}\right],\quad e_2 = \left[\begin{matrix}4\\2\\3\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-2\\-4\\-2\end{matrix}\right]$$Вариант N 149
+
+$$A = \left[\begin{matrix}-143 & 94 & 92\\-143 & 112 & 82\\-110 & 74 & 75\end{matrix}\right],\quad e_1 = \left[\begin{matrix}1\\3\\-2\end{matrix}\right],\quad e_2 = \left[\begin{matrix}2\\-1\\2\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-4\\-2\\1\end{matrix}\right]$$Вариант N 150
+
+$$A = \left[\begin{matrix}-48 & 10 & 30\\132 & -44 & -102\\-118 & 34 & 85\end{matrix}\right],\quad e_1 = \left[\begin{matrix}2\\-4\\4\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-2\\2\\3\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-3\\4\\2\end{matrix}\right]$$Вариант N 151
+
+$$A = \left[\begin{matrix}-76 & 126 & -96\\176 & 64 & 80\\224 & -136 & 220\end{matrix}\right],\quad e_1 = \left[\begin{matrix}2\\-4\\4\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-1\\1\\4\end{matrix}\right],\quad e_3 = \left[\begin{matrix}1\\-4\\1\end{matrix}\right]$$Вариант N 152
+
+$$A = \left[\begin{matrix}-89 & 93 & 96\\-92 & 96 & 100\\24 & -24 & -17\end{matrix}\right],\quad e_1 = \left[\begin{matrix}4\\-3\\-4\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-3\\3\\4\end{matrix}\right],\quad e_3 = \left[\begin{matrix}4\\1\\2\end{matrix}\right]$$Вариант N 153
+
+$$A = \left[\begin{matrix}54 & 30 & -17\\-324 & -192 & 111\\-420 & -258 & 151\end{matrix}\right],\quad e_1 = \left[\begin{matrix}4\\-2\\-3\end{matrix}\right],\quad e_2 = \left[\begin{matrix}2\\1\\-3\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-1\\-1\\2\end{matrix}\right]$$Вариант N 154
+
+$$A = \left[\begin{matrix}86 & 19 & 62\\16 & 26 & 16\\-100 & -35 & -76\end{matrix}\right],\quad e_1 = \left[\begin{matrix}2\\-2\\-4\end{matrix}\right],\quad e_2 = \left[\begin{matrix}1\\-4\\3\end{matrix}\right],\quad e_3 = \left[\begin{matrix}2\\-2\\-2\end{matrix}\right]$$Вариант N 155
+
+$$A = \left[\begin{matrix}14 & -5 & -5\\8 & 0 & -7\\2 & -1 & 6\end{matrix}\right],\quad e_1 = \left[\begin{matrix}2\\2\\2\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-2\\-1\\-1\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-2\\-3\\-1\end{matrix}\right]$$Вариант N 156
+
+$$A = \left[\begin{matrix}119 & -141 & -4\\84 & -102 & 0\\92 & -114 & 2\end{matrix}\right],\quad e_1 = \left[\begin{matrix}1\\-4\\4\end{matrix}\right],\quad e_2 = \left[\begin{matrix}3\\1\\-3\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-4\\4\\-2\end{matrix}\right]$$Вариант N 157
+
+$$A = \left[\begin{matrix}4 & 12 & 12\\-34 & 48 & 23\\26 & -22 & 3\end{matrix}\right],\quad e_1 = \left[\begin{matrix}4\\1\\2\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-3\\-2\\-2\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-3\\-2\\-1\end{matrix}\right]$$Вариант N 158
+
+$$A = \left[\begin{matrix}216 & 54 & 44\\676 & -206 & -216\\-540 & 240 & 290\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-3\\-2\\-4\end{matrix}\right],\quad e_2 = \left[\begin{matrix}3\\-3\\-1\end{matrix}\right],\quad e_3 = \left[\begin{matrix}2\\-4\\-1\end{matrix}\right]$$Вариант N 159
+
+$$A = \left[\begin{matrix}-58 & -17 & 24\\-120 & -14 & 39\\-222 & -41 & 80\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-3\\2\\2\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-4\\1\\-3\end{matrix}\right],\quad e_3 = \left[\begin{matrix}3\\-1\\1\end{matrix}\right]$$Вариант N 160
+
+$$A = \left[\begin{matrix}-79 & -76 & -94\\144 & 141 & 144\\88 & 52 & 103\end{matrix}\right],\quad e_1 = \left[\begin{matrix}4\\4\\3\end{matrix}\right],\quad e_2 = \left[\begin{matrix}2\\1\\2\end{matrix}\right],\quad e_3 = \left[\begin{matrix}1\\4\\3\end{matrix}\right]$$Вариант N 161
+
+$$A = \left[\begin{matrix}-75 & -142 & -150\\-57 & -98 & -108\\92 & 164 & 178\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-1\\-1\\2\end{matrix}\right],\quad e_2 = \left[\begin{matrix}3\\-2\\2\end{matrix}\right],\quad e_3 = \left[\begin{matrix}1\\-2\\3\end{matrix}\right]$$Вариант N 162
+
+$$A = \left[\begin{matrix}77 & -16 & -143\\33 & -24 & -51\\43 & -32 & -73\end{matrix}\right],\quad e_1 = \left[\begin{matrix}1\\1\\-1\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-4\\1\\2\end{matrix}\right],\quad e_3 = \left[\begin{matrix}1\\-2\\1\end{matrix}\right]$$Вариант N 163
+
+$$A = \left[\begin{matrix}123 & 372 & 408\\188 & 482 & 548\\-200 & -500 & -575\end{matrix}\right],\quad e_1 = \left[\begin{matrix}4\\4\\-1\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-4\\1\\-4\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-1\\4\\-4\end{matrix}\right]$$Вариант N 164
+
+$$A = \left[\begin{matrix}-8 & 24 & 15\\44 & 18 & 0\\-60 & 30 & 45\end{matrix}\right],\quad e_1 = \left[\begin{matrix}4\\-4\\1\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-2\\2\\-3\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-1\\4\\-3\end{matrix}\right]$$Вариант N 165
+
+$$A = \left[\begin{matrix}166 & 648 & -282\\-48 & -188 & 84\\-9 & -36 & 19\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-1\\-1\\1\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-4\\-3\\4\end{matrix}\right],\quad e_3 = \left[\begin{matrix}3\\-2\\-2\end{matrix}\right]$$Вариант N 166
+
+$$A = \left[\begin{matrix}36 & -28 & 44\\-78 & 19 & -47\\-90 & 45 & -105\end{matrix}\right],\quad e_1 = \left[\begin{matrix}3\\2\\-2\end{matrix}\right],\quad e_2 = \left[\begin{matrix}1\\-1\\1\end{matrix}\right],\quad e_3 = \left[\begin{matrix}1\\1\\-3\end{matrix}\right]$$Вариант N 167
+
+$$A = \left[\begin{matrix}-25 & -70 & 98\\70 & 185 & -252\\70 & 105 & -130\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-4\\3\\1\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-1\\2\\-1\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-1\\-2\\2\end{matrix}\right]$$Вариант N 168
+
+$$A = \left[\begin{matrix}243 & -188 & -28\\-62 & 117 & -68\\60 & -60 & 355\end{matrix}\right],\quad e_1 = \left[\begin{matrix}1\\2\\-3\end{matrix}\right],\quad e_2 = \left[\begin{matrix}4\\-2\\3\end{matrix}\right],\quad e_3 = \left[\begin{matrix}1\\-1\\-4\end{matrix}\right]$$Вариант N 169
+
+$$A = \left[\begin{matrix}-8 & 20 & 22\\-4 & 16 & 8\\-14 & 14 & 31\end{matrix}\right],\quad e_1 = \left[\begin{matrix}2\\-2\\-1\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-2\\-4\\1\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-1\\4\\2\end{matrix}\right]$$Вариант N 170
+
+$$A = \left[\begin{matrix}-288 & -264 & 40\\94 & 19 & -151\\-278 & -387 & 87\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-4\\-3\\2\end{matrix}\right],\quad e_2 = \left[\begin{matrix}4\\-4\\3\end{matrix}\right],\quad e_3 = \left[\begin{matrix}4\\4\\1\end{matrix}\right]$$Вариант N 171
+
+$$A = \left[\begin{matrix}89 & -70 & 105\\-3 & 18 & -3\\-71 & 58 & -87\end{matrix}\right],\quad e_1 = \left[\begin{matrix}1\\2\\-1\end{matrix}\right],\quad e_2 = \left[\begin{matrix}2\\-1\\2\end{matrix}\right],\quad e_3 = \left[\begin{matrix}1\\3\\-1\end{matrix}\right]$$Вариант N 172
+
+$$A = \left[\begin{matrix}-3 & -45 & 60\\-9 & 65 & -92\\-3 & 51 & -72\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-3\\1\\-1\end{matrix}\right],\quad e_2 = \left[\begin{matrix}1\\-3\\-3\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-4\\4\\4\end{matrix}\right]$$Вариант N 173
+
+$$A = \left[\begin{matrix}-1 & 110 & -25\\31 & 82 & -29\\39 & 102 & -57\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-1\\-2\\-1\end{matrix}\right],\quad e_2 = \left[\begin{matrix}2\\1\\-4\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-1\\1\\1\end{matrix}\right]$$Вариант N 174
+
+$$A = \left[\begin{matrix}-31 & 16 & 16\\-248 & 143 & 113\\252 & -162 & -132\end{matrix}\right],\quad e_1 = \left[\begin{matrix}1\\-4\\-2\end{matrix}\right],\quad e_2 = \left[\begin{matrix}4\\2\\2\end{matrix}\right],\quad e_3 = \left[\begin{matrix}4\\1\\2\end{matrix}\right]$$Вариант N 175
+
+$$A = \left[\begin{matrix}106 & 78 & 46\\-168 & -124 & -72\\54 & 38 & 18\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-3\\2\\-3\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-1\\2\\-2\end{matrix}\right],\quad e_3 = \left[\begin{matrix}3\\2\\-1\end{matrix}\right]$$Вариант N 176
+
+$$A = \left[\begin{matrix}199 & -128 & -104\\340 & -221 & -188\\-56 & 40 & 55\end{matrix}\right],\quad e_1 = \left[\begin{matrix}3\\4\\-1\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-2\\-2\\1\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-1\\1\\3\end{matrix}\right]$$Вариант N 177
+
+$$A = \left[\begin{matrix}78 & -32 & -32\\348 & -140 & -113\\-276 & 98 & 71\end{matrix}\right],\quad e_1 = \left[\begin{matrix}3\\-4\\-3\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-4\\2\\1\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-4\\1\\1\end{matrix}\right]$$Вариант N 178
+
+$$A = \left[\begin{matrix}-4 & -12 & -12\\5 & -2 & -4\\-1 & -16 & -14\end{matrix}\right],\quad e_1 = \left[\begin{matrix}1\\-2\\-1\end{matrix}\right],\quad e_2 = \left[\begin{matrix}1\\3\\2\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-1\\3\\2\end{matrix}\right]$$Вариант N 179
+
+$$A = \left[\begin{matrix}247 & -243 & 332\\392 & -388 & 536\\102 & -102 & 144\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-4\\2\\3\end{matrix}\right],\quad e_2 = \left[\begin{matrix}3\\-2\\-3\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-2\\3\\4\end{matrix}\right]$$Вариант N 180
+
+$$A = \left[\begin{matrix}2 & -6 & 20\\4 & 16 & -4\\1 & 3 & 12\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-1\\-1\\-1\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-1\\-3\\-3\end{matrix}\right],\quad e_3 = \left[\begin{matrix}2\\4\\-2\end{matrix}\right]$$Вариант N 181
+
+$$A = \left[\begin{matrix}169 & 296 & 236\\-156 & -267 & -204\\74 & 124 & 91\end{matrix}\right],\quad e_1 = \left[\begin{matrix}1\\-1\\3\end{matrix}\right],\quad e_2 = \left[\begin{matrix}3\\-2\\2\end{matrix}\right],\quad e_3 = \left[\begin{matrix}4\\-2\\-3\end{matrix}\right]$$Вариант N 182
+
+$$A = \left[\begin{matrix}71 & -93 & 129\\92 & -149 & 234\\54 & -101 & 162\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-2\\4\\-1\end{matrix}\right],\quad e_2 = \left[\begin{matrix}3\\-1\\2\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-3\\-2\\-3\end{matrix}\right]$$Вариант N 183
+
+$$A = \left[\begin{matrix}-11 & -20 & -50\\17 & 26 & 26\\4 & 4 & -14\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-2\\-1\\3\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-2\\-1\\4\end{matrix}\right],\quad e_3 = \left[\begin{matrix}4\\3\\-2\end{matrix}\right]$$Вариант N 184
+
+$$A = \left[\begin{matrix}-214 & 159 & -206\\-222 & 167 & -198\\48 & -48 & 52\end{matrix}\right],\quad e_1 = \left[\begin{matrix}4\\-3\\-4\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-4\\3\\2\end{matrix}\right],\quad e_3 = \left[\begin{matrix}1\\-2\\-4\end{matrix}\right]$$Вариант N 185
+
+$$A = \left[\begin{matrix}-60 & -24 & 64\\-276 & -120 & 312\\-164 & -68 & 180\end{matrix}\right],\quad e_1 = \left[\begin{matrix}4\\-1\\3\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-2\\-1\\1\end{matrix}\right],\quad e_3 = \left[\begin{matrix}2\\2\\-3\end{matrix}\right]$$Вариант N 186
+
+$$A = \left[\begin{matrix}4 & 30 & 51\\12 & -6 & 9\\16 & 12 & 18\end{matrix}\right],\quad e_1 = \left[\begin{matrix}1\\1\\1\end{matrix}\right],\quad e_2 = \left[\begin{matrix}3\\-1\\1\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-3\\-1\\2\end{matrix}\right]$$Вариант N 187
+
+$$A = \left[\begin{matrix}-373 & 271 & 628\\-194 & 140 & 328\\-135 & 99 & 226\end{matrix}\right],\quad e_1 = \left[\begin{matrix}3\\1\\2\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-3\\-4\\-1\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-4\\3\\-4\end{matrix}\right]$$Вариант N 188
+
+$$A = \left[\begin{matrix}-97 & -142 & 38\\87 & 126 & -32\\69 & 94 & -18\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-3\\3\\-1\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-4\\2\\-2\end{matrix}\right],\quad e_3 = \left[\begin{matrix}1\\2\\1\end{matrix}\right]$$Вариант N 189
+
+$$A = \left[\begin{matrix}-30 & 20 & 15\\-12 & -25 & 0\\-4 & 40 & 5\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-3\\4\\4\end{matrix}\right],\quad e_2 = \left[\begin{matrix}4\\-4\\-1\end{matrix}\right],\quad e_3 = \left[\begin{matrix}3\\-3\\-2\end{matrix}\right]$$Вариант N 190
+
+$$A = \left[\begin{matrix}-85 & -339 & -384\\96 & 316 & 324\\-49 & -147 & -140\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-1\\-3\\-1\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-3\\-2\\-3\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-4\\3\\-3\end{matrix}\right]$$Вариант N 191
+
+$$A = \left[\begin{matrix}-26 & 30 & -28\\3 & 1 & 4\\24 & -24 & 27\end{matrix}\right],\quad e_1 = \left[\begin{matrix}3\\-3\\-3\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-3\\2\\3\end{matrix}\right],\quad e_3 = \left[\begin{matrix}4\\-4\\-3\end{matrix}\right]$$Вариант N 192
+
+$$A = \left[\begin{matrix}-47 & 67 & 58\\-17 & 21 & 26\\-6 & 10 & 2\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-1\\1\\-2\end{matrix}\right],\quad e_2 = \left[\begin{matrix}1\\-3\\4\end{matrix}\right],\quad e_3 = \left[\begin{matrix}4\\2\\1\end{matrix}\right]$$Вариант N 193
+
+$$A = \left[\begin{matrix}27 & -1 & -5\\-137 & -37 & -1\\188 & 44 & -4\end{matrix}\right],\quad e_1 = \left[\begin{matrix}1\\-3\\4\end{matrix}\right],\quad e_2 = \left[\begin{matrix}3\\1\\4\end{matrix}\right],\quad e_3 = \left[\begin{matrix}2\\1\\2\end{matrix}\right]$$Вариант N 194
+
+$$A = \left[\begin{matrix}-21 & 11 & 7\\14 & -24 & -13\\-10 & 10 & -5\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-4\\1\\1\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-1\\-1\\-1\end{matrix}\right],\quad e_3 = \left[\begin{matrix}3\\-2\\-1\end{matrix}\right]$$Вариант N 195
+
+$$A = \left[\begin{matrix}-28 & 27 & 18\\24 & -94 & -84\\36 & 99 & 98\end{matrix}\right],\quad e_1 = \left[\begin{matrix}4\\1\\-4\end{matrix}\right],\quad e_2 = \left[\begin{matrix}3\\1\\3\end{matrix}\right],\quad e_3 = \left[\begin{matrix}2\\1\\2\end{matrix}\right]$$Вариант N 196
+
+$$A = \left[\begin{matrix}-225 & 60 & -140\\-6 & -39 & -4\\276 & -96 & 169\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-4\\-3\\3\end{matrix}\right],\quad e_2 = \left[\begin{matrix}2\\3\\2\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-3\\-2\\2\end{matrix}\right]$$Вариант N 197
+
+$$A = \left[\begin{matrix}325 & -225 & -81\\299 & -207 & -95\\318 & -294 & -38\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-1\\3\\4\end{matrix}\right],\quad e_2 = \left[\begin{matrix}3\\-3\\-2\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-2\\-1\\-1\end{matrix}\right]$$Вариант N 198
+
+$$A = \left[\begin{matrix}88 & -24 & 16\\464 & 116 & 352\\304 & -16 & 348\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-4\\3\\-4\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-2\\-2\\1\end{matrix}\right],\quad e_3 = \left[\begin{matrix}3\\4\\-4\end{matrix}\right]$$Вариант N 199
+
+$$A = \left[\begin{matrix}137 & -47 & -84\\-9 & 79 & -12\\-7 & 17 & 124\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-1\\-1\\1\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-4\\-1\\-1\end{matrix}\right],\quad e_3 = \left[\begin{matrix}-3\\-4\\-2\end{matrix}\right]$$Вариант N 200
+
+$$A = \left[\begin{matrix}-222 & -108 & 36\\404 & 246 & -24\\-340 & -150 & 84\end{matrix}\right],\quad e_1 = \left[\begin{matrix}-4\\2\\-3\end{matrix}\right],\quad e_2 = \left[\begin{matrix}-1\\-2\\-4\end{matrix}\right],\quad e_3 = \left[\begin{matrix}1\\-4\\-2\end{matrix}\right]$$\end{document}
